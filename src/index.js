@@ -30,7 +30,7 @@ var upload = function (config) {
         }
     };
     lib.extends(conf, config);
-    var dom = document.querySelector(conf.id);
+    var dom = window.document.querySelector(conf.id);
     if (!lint(conf)) {
         console.log('缺少必要参数!');
         return;

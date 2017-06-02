@@ -42,6 +42,7 @@ function upload(dom, conf) {
     }
 };
 var fnLoadScript = function (src, fun) {
+    var document = window.document;
     var head = document.getElementsByTagName('head')[0] || document.head || document.documentElement;
 
     var script = document.createElement('script');
